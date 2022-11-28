@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Karla';
+
+}
+body{
+    font-family:'karla';
+    font-weight: 400;
+    font-size: 16px;
+    background-color: hsl(208, 49%, 92%);
+    color: rgb(207, 206, 206);
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2,350px);
+    grid-template-rows: repeat(2,250px);
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    max-width: 100%;
+    
+}
+div{
+    box-shadow:0px 0px 4px 0px hsl(147, 18%, 22%);
+    padding: 5% 10% 5%;
+   
+}
+.top{
+    grid-column: span 2;
+    background-color: white;
+    font-weight: 700;
+    border-radius: 10px 10px 0px 0px;
+}
+.top h1{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+.top h2{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 21px;
+
+}
+.side-1{
+    color:hsl(204, 43%, 93%);
+    background-color:hsl(179, 61%, 44%);
+    position: relative;
+    border-radius: 0px 0px 0px 10px;
+    
+}
+.side-1 h3{
+    font-size: 31px;
+    font-weight: 700;
+}
+.side-1 h3 span{
+    font-size: 16px;
+    font-weight: 400;
+}
+.side-1 a{
+    text-decoration: none;
+    border: 1px solid  hsl(71, 73%, 54%);
+    background-color:  hsl(71, 73%, 54%);
+    color:  hsl(204, 43%, 93%);
+    display: grid;
+    margin-top: 20px;
+    padding: 10px 0px 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow:0px 0px 1px 0px hsl(147, 18%, 22%);
+    
+}
+.side-2{
+   background-color:hsl(179, 47%, 52%);
+   color:  hsl(204, 43%, 93%);
+   padding: 5% 25% 5% 10%;
+   border-radius: 0px 0px 10px 0px;
+}
+@media (max-width:1020px) {
+    main{
+        grid-template-columns:350px;
+        grid-template-rows:repeat(3,250px);        
+        justify-content: none;
+        align-content: none;
+    }
+    .top{
+        grid-column: 1;
+    }
+    div{
+        box-shadow:0px 0px 4px 0px hsl(147, 18%, 22%);
+        padding: 5px 20px 10px;
+    }
+
+}
